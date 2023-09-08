@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.svg";
-import download_btn from "../assets/download-app.svg";
+
 import Button from "./Button";
 
 const NavBar = () => {

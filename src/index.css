@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: red;
+  background-color: #4b27dc7c; */
 }
 body{
   font-family: 'Roboto', sans-serif;
@@ -108,11 +110,11 @@ a{
   align-items: center;
 }
 .eq-container {
-  margin-inline: 100px;
+  margin: 40px 100px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  margin-block: 20px;
+  
 }
 .eq-container p {
   width: 30%;
@@ -129,7 +131,8 @@ a{
 
 .cards-container {
   margin-top: 70px;
-  width: 100vw;
+  width: 97vw;
+  
   
 }
 .cards-scroll {
@@ -137,12 +140,13 @@ a{
   gap: 20px;
   overflow-x: scroll ;
   scrollbar-width: none; 
+  
+  justify-content: center;
+  align-items: center;
 }
 .cards-scroll::-webkit-scrollbar {
   display: none;
 }
-
-
 
 .cards-container h2 {
   font-size: 40px;
@@ -202,4 +206,156 @@ a{
   color: #343434;
   line-height: 25px;
 
+}
+
+.timeline-container{
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px ;
+}
+.timeline-container h3 {
+  color: #222;
+  font-size: 25px;
+}
+.timeline-container h1 {
+  font-size: 50px;
+}
+.social-container{
+  background-color: #EDF8FE;
+  margin: 150px;
+  padding: 50px;
+  border-radius: 50px;
+  text-align: center;
+  /* width: 500px; */
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+}
+.sun-timeline-container{
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+}
+.social-container h3 {
+  font-size: 1rem;
+}
+.social-container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.sun-text{
+  margin-top: 50px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #343434;
+}
+.sun-text span {
+  font-size: 2.5rem;
+}
+.sun-text p {
+  font-weight: bold;
+}
+.social-img{
+  height: 40%;
+  margin-top: 30px;
+
+}
+.quote-container{
+  /* text-align: center; */
+  margin-block: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-container h2{
+  font-size: 35px;
+}
+.quote-container p {
+  font-size: 20px;
+}
+.work-container {
+  display: block;
+  width: 70%;
+  margin: auto;
+  background-color: #F3F1FF;
+  border-radius: 50px;
+  padding: 70px;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+.work-container h2 {
+  font-size: 2.5rem;
+}
+.new-container {
+  background-color: white;
+  border-radius: 25px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+  
+  width: 70%;
+}
+.about {
+  padding: 50px 40px;
+  line-height: 25px;
+}
+.product{
+  background-color: #FEF6F1;
+  width: 100%;
+  border-radius: 25px;
+}
+.about p {
+  color: #343434;
+}
+.ahead-container {}
+
+.vacancies-container {
+    margin: 40px;
+}
+.vacancies-container h1 {
+  font-size: 40px;
+  margin: 50px 150px;
+
+}
+
+.vacancies-cards-container{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+
+}
+.list-card {
+  background-color: #FEFBEC;
+  border-radius: 25px;
+  padding: 40px 30px;
+  width: 350px;
+}
+.card-list {
+  margin-block: 20px;
+}
+.card-list li {
+  margin-block: 10px;
+}
+
+.footer {
+  margin-block: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.address span {
+  margin-inline: 20px;
 }
