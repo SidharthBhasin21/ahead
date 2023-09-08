@@ -1,31 +1,57 @@
 import React from "react";
 import logo from "../assets/logo.svg";
-
+import { motion } from "framer-motion";
 import Button from "./Button";
 
 const NavBar = () => {
   return (
     <nav className="navbar">
-      <div className="logo">
+      <motion.div
+        className="logo"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         <img src={logo} alt="Logo" />
-      </div>
+      </motion.div>
 
-      <div className="navlist-container">
+      <motion.div
+        className="navlist-container"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         <ul>
-          <li className="nav-links">
+          <motion.li
+            className="nav-links"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+          >
             <a href="#">Emotions</a>
-          </li>
-          <li className="nav-links">
+          </motion.li>
+          <motion.li
+            className="nav-links"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+          >
             <a href="#">Manifesto</a>
-          </li>
-          <li className="nav-links">
+          </motion.li>
+          <motion.li
+            className="nav-links"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+          >
             <a href="#">Self-awareness test</a>
-          </li>
-          <li className="nav-links">
+          </motion.li>
+          <motion.li
+            className="nav-links"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+          >
             <a href="#">Work with us</a>
-          </li>
+          </motion.li>
         </ul>
-      </div>
+      </motion.div>
 
       <div className="download-btn">
         <Button text="Download App" />

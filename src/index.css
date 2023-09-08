@@ -40,6 +40,7 @@ a{
   cursor: pointer;
   height: 60px;
   width: 150px;
+  border: 0px;
   /* border-top-left-radius: 45%;
   border-bottom-left-radius: 45%; */
 }
@@ -49,7 +50,7 @@ a{
   width: 100%;
   display: flex;
   list-style-type: none;
-  gap: 30px;
+  gap: 50px;
 }
 .nav-links a {
   color: #343434;
