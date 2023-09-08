@@ -6,15 +6,15 @@ import { useInView } from "react-intersection-observer";
 const Motivation = () => {
   const animationHeader = {
     hidden: { opacity: 0, y: -100 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.5 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.9 } },
   };
   const animationImg = {
     hidden: { opacity: 0, x: -100 },
-    visible: { opacity: 1, x: 0, transition: { duration: 1, delay: 0.5 } },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.3, delay: 0.9 } },
   };
   const animationText = {
     hidden: { opacity: 0, x: 100 },
-    visible: { opacity: 1, x: 0, transition: { duration: 1, delay: 0.5 } },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.3, delay: 0.9 } },
   };
 
   const [ref, inView] = useInView({
