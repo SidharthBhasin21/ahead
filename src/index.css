@@ -314,7 +314,9 @@ a{
 .about p {
   color: #343434;
 }
-.ahead-container {}
+.ahead-container img {
+  text-align: right;
+}
 
 .vacancies-container {
     margin: 40px;
